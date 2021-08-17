@@ -1,0 +1,72 @@
+.toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .icons_bg {
+    display: none;
+    background-color: #44ABFF;
+    width: 100%;
+    padding: 15px;
+    color: #FFF;
+    position: relative;
+  }
+  .spacer {
+    flex: 1;
+  }
+  .settings_icon {
+    display: none;
+  }
+  @media screen and (max-width: 480px){
+    .toolbar {
+      padding:0 10px;
+      width: 100%;
+    }
+    .icons_bg, .settings_icon {
+      display: block;
+      visibility: visible;
+    }
+  .home_icon {
+    margin-left: 5em;
+  }
+  .login_btn {
+    display: none;
+  }
+  
+  
+  }
+  @media screen and (max-width: 575px) {
+    svg#rocket-smoke, 
+    .login_btn {
+      display: none;
+      visibility: hidden;
+    }
+  .icons_bg, .settings_icon {
+    display: block;
+    visibility: visible;
+  }
+  .toolbar {
+    position: relative;
+  }
+
+  .list_icon {
+    margin: 0px 10px;
+  }
+
+  .user_icon {
+    margin-left: 4em;
+  }
+
+  .cart_icon {
+    margin-left: 5em;
+  }
+
+}
