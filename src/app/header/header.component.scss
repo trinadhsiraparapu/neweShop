@@ -13,6 +13,10 @@
   .home_icon {
     color: lightseagreen;
   }
+  .logo{
+    color:  lightseagreen;
+    font-size: 2em;
+  }
   .login_btn {
     color: lightseagreen;
   }
@@ -29,6 +33,7 @@
   }
   .settings_icon {
     display: none;
+    margin: 0 15px 0 0;
   }
   @media screen and (max-width: 480px){
     .toolbar {
@@ -61,7 +66,9 @@
   .toolbar {
     position: relative;
   }
-
+.settings_icon{
+  margin: 0 15px 0 0;
+}
   .list_icon {
     margin: 0px 10px;
   }
