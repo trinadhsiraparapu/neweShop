@@ -1,5 +1,5 @@
 .mat-card-tile{
-    height:80%;
+    height:50%;
     overflow:visible;
     text-align: center;
   }
@@ -24,7 +24,6 @@ flex: 1;
   p {
     margin: 0;
     font-weight: bold;
-    padding: 0px 55px;
   }
   .text_bold {
     font-weight: bold;
@@ -32,31 +31,7 @@ flex: 1;
   .price {
     font-size: 1.5em;
   }
-  @media screen and (max-width: 768px) {
-    .card-container>*:not(.circle-link),
-    .terminal {
-      width: 100%;
-    }
-
-    .card:not(.highlight-card) {
-      height: 16px;
-      margin: 8px 0;
-    }
-
-    .card.highlight-card span {
-      margin-left: 72px;
-    }
-
-    svg#rocket-smoke {
-      right: 120px;
-      transform: rotate(-5deg);
-    }
-
-    .dropdownblock {
-      max-width: 450px;
-    }
-  }
-
+  
   @media screen and (max-width: 575px) {
     svg#rocket-smoke, .login_btn {
       display: none;
@@ -89,15 +64,6 @@ flex: 1;
     margin-left: 5em;
   }
 
-}
-@media screen and (max-width: 575px) {
-.mat-card-tile {
-  width: 100%;
-  display: block;
-  margin: 0px auto;
-  border: 0px ;
-  position: relative;
-}
 }
 
     

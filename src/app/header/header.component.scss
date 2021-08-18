@@ -6,11 +6,16 @@
     height: 60px;
     display: flex;
     align-items: center;
-    background-color: #1976d2;
+    background-color: #DAE1E7;
     color: white;
     font-weight: 600;
   }
-  
+  .home_icon {
+    color: lightseagreen;
+  }
+  .login_btn {
+    color: lightseagreen;
+  }
   .icons_bg {
     display: none;
     background-color: #44ABFF;
