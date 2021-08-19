@@ -6,13 +6,18 @@
   .mat-grid-tile-div{
     display:block;
     margin:0px 0px;
+    width: 93%;
   }
-  .mat-grid-tile-div img{
+  .mat-grid_img {
     display:block;
     width:100%;
+    
   }
 .spacer {
 flex: 1;
+}
+.m-l-20{
+  margin-left: 10em;
 }
 .addtocart_button {
     display: block; 
@@ -40,6 +45,11 @@ flex: 1;
       display: none;
       visibility: hidden;
     }
+
+    .mat-grid-tile-div, .mat-grid_img{
+      width: 100%;
+    }
+
   .mat-card-tile {
     width: 100%;
     display: block;
@@ -67,7 +77,10 @@ flex: 1;
   .cart_icon {
     margin-left: 5em;
   }
-
+  .hide {
+   visibility: hidden;
+   display: none;
+  }
 }
 
     

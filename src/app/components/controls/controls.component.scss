@@ -1,0 +1,29 @@
+.dropdownblock {
+    max-width: 1080px; 
+    width: 100%; 
+    margin: 0px auto;
+  }
+  .ddBack{
+    background-color: lightseagreen; 
+    width: 100%;
+     padding: 10px 0px;
+  }
+  @media screen and (max-width: 480px){
+    .dropdownblock{
+      visibility: hidden;
+    }
+  .ddBack{
+    visibility: hidden;
+  }  
+  
+  }
+  @media screen and (max-width: 575px) {
+    .dropdownblock{
+      visibility: hidden;
+      
+    }
+    .ddBack{
+      visibility: hidden;
+      display: none;
+    }
+}
