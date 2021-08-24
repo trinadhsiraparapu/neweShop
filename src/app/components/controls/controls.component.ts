@@ -13,7 +13,7 @@ export class ControlsComponent implements OnInit {
   selectedFoodModel: string;
   foods: Food[] = [
     {value: 'steak-0', viewValue: 'Steak'},
-    {value: 'pizza-1', viewValue: 'Pizza'},
+    {value: 'pizza-1', viewValue: 'All'},
     {value: 'tacos-2', viewValue: 'Tacos'}
   ];
 

@@ -1,6 +1,5 @@
 .dropdownblock {
-    max-width: 1080px; 
-    width: 100%; 
+    width: 80%; 
     margin: 0px auto;
   }
   .ddBack{
@@ -8,6 +7,28 @@
     width: 100%;
      padding: 10px 0px;
   }
+  ::ng-deep {
+    .mat-form-field-appearance-outline .mat-form-field-outline {
+      color: white;
+      display: flex;
+      flex-direction: row;
+      padding: 0 4px;
+   }
+   mat-form-field {
+    .mat-hint, input, ::placeholder, .mat-form-field-label {
+       color: white;
+       margin-top:-15px;
+    }
+ }
+   .mat-form-field-wrapper {
+     padding-bottom: 0;
+ }
+ .mat-form-field-appearance-outline .mat-form-field-flex {
+   padding: 9px .75em 0 .75em;
+ }
+  
+ }
+ 
   @media screen and (max-width: 480px){
     .dropdownblock{
       visibility: hidden;

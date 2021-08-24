@@ -2,6 +2,9 @@
     height:50%;
     overflow:visible;
     text-align: center;
+    position: absolute;
+    width: auto;
+    height: auto;
   }
   .mat-grid-tile-div{
     display:block;
@@ -23,7 +26,8 @@ flex: 1;
     display: block; 
     margin: 10px auto; 
     padding: 0px 35px; 
-    background-color:#00FF80; 
+    background-color:#c1e88d
+    ; 
     color:white
   }
   p {

@@ -1,17 +1,16 @@
 <div class="ddBack">
     <div class="dropdown dropdownblock">
-      <mat-form-field>
-        <mat-label>Type</mat-label>
-        <mat-select placeholder="All">
-          <mat-option>One</mat-option>
-          <mat-option>Two</mat-option>
-          <mat-option>Three</mat-option>
-          <mat-option>Four</mat-option>
-          <mat-option>Five</mat-option>
-        </mat-select>
-      </mat-form-field>
-      <mat-form-field>
-        <mat-select placeholder="Favorite food" name="foods" [(value)]="selectedFood">
+        <mat-form-field appearance="outline">
+          <mat-label>BRAND</mat-label>
+          <mat-select placeholder="All" name="foods" [(value)]="selectedFood">
+            <mat-option *ngFor="let food of foods" [value]="food.value">
+              {{food.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      <mat-form-field appearance="outline" >
+        <mat-label>TYPE</mat-label>
+        <mat-select placeholder="All" name="foods" [(value)]="selectedFood">
           <mat-option *ngFor="let food of foods" [value]="food.value">
             {{food.viewValue}}
           </mat-option>
