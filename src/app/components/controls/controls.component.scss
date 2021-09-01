@@ -28,7 +28,21 @@
  }
   
  }
- 
+ @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .ddBack{
+    width: 100%;
+  }
+ }
+ @media screen and (max-width: 575px) {
+  .dropdownblock{
+    visibility: hidden;
+    
+  }
+  .ddBack{
+    visibility: hidden;
+    display: none;
+  }
+}
   @media screen and (max-width: 480px){
     .dropdownblock{
       visibility: hidden;
@@ -38,13 +52,4 @@
   }  
   
   }
-  @media screen and (max-width: 575px) {
-    .dropdownblock{
-      visibility: hidden;
-      
-    }
-    .ddBack{
-      visibility: hidden;
-      display: none;
-    }
-}
+  

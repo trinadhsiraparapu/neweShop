@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { CategoryserService }from './categoryser.service';
+import {CategoryList} from './CategoryList';
 export interface Food {
   value: string;
   viewValue: string;
@@ -11,15 +14,16 @@ export interface Food {
 export class ControlsComponent implements OnInit {
   selectedFood: string;
   selectedFoodModel: string;
-  foods: Food[] = [
-    {value: 'steak-0', viewValue: 'Steak'},
-    {value: 'pizza-1', viewValue: 'All'},
-    {value: 'tacos-2', viewValue: 'Tacos'}
-  ];
-
+  public categories: CategoryList[] = [];
+  constructor(private http: CategoryserService){}
   ngOnInit(){
-    this.selectedFood = this.foods[1].value;
-    this.selectedFoodModel = this.foods[1].value;
+    debugger
+    this.http.getCategories().subscribe((data) =>{
+      this.categories = data;
+    console.log(data);
+      
+    });
+    
   }
   
 }

@@ -1,6 +1,6 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductComponent } from './components/product/product.component';
@@ -29,6 +29,7 @@ import { HostListener } from "@angular/core";
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     MatGridListModule,
     FormsModule,
@@ -41,4 +42,5 @@ import { HostListener } from "@angular/core";
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
