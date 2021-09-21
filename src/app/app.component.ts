@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HostListener } from "@angular/core";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,7 @@ export class AppComponent implements OnInit {
   screenHeight: number;
   screenWidth: number;
   title = 'neweShop';
-  constructor() {
+  constructor(private router: Router) {
     this.getScreenSize();
   }
     @HostListener('window:resize', ['$event'])
@@ -19,7 +20,10 @@ export class AppComponent implements OnInit {
           this.screenWidth = window.innerWidth;
           console.log(this.screenHeight, this.screenWidth);
     }
-    ngOnInit() {}
+    ngOnInit() {
+      
+    }
     
+  
 }
 

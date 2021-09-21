@@ -7,6 +7,14 @@
     width: 100%;
      padding: 10px 0px;
   }
+  .btnarw{
+    background-color: #07D307;
+  }
+  .arwicon{
+     background-color:
+      #07D307; padding: 6px;
+  }
+
   ::ng-deep {
     .mat-form-field-appearance-outline .mat-form-field-outline {
       color: white;
@@ -19,6 +27,7 @@
        color: white;
        margin-top:-15px;
     }
+    
  }
    .mat-form-field-wrapper {
      padding-bottom: 0;

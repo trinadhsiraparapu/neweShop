@@ -1,22 +1,14 @@
-<div class="ddBack"> 
-    {{categories}}
+<div  class="ddBack" > 
     <div class="dropdown dropdownblock">
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="outline">
             <mat-label>categories</mat-label>
-             <mat-select>
-             <mat-option value="All">All</mat-option>
+             <mat-select  (selectionChange)="changeClient($event.value)">
              <mat-option *ngFor="let x of categories" [value]="x" >{{x}}</mat-option>
             </mat-select>
           </mat-form-field>
-      <mat-form-field appearance="outline" >
-        <mat-label>TYPE</mat-label>
-        <mat-select placeholder="All" name="foods" [(value)]="selectedFood">
-          <mat-option *ngFor="let food of categories" [value]="food.category">
-            {{food.category}}
-          </mat-option>
-        </mat-select>
-      </mat-form-field>
-      <mat-icon style="color:white;  background-color: #07D307; padding: 10px;" aria-hidden="false" aria-label="Example home icon">keyboard_arrow_right</mat-icon>
+      <button (click)="cclick()" class="btnarw">
+          <mat-icon class="arwicon"  aria-hidden="false" aria-label="Example home icon">keyboard_arrow_right</mat-icon>
+        </button> 
     </div>
   </div>
   

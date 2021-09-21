@@ -1,16 +1,27 @@
-<div style="max-width: 80%; margin: 0px auto; display: block; width: 100%;">
 
-  <h3 align="center" class="text_bold hide">Showing 10 of 12 Products-Page 1-2<span><button mat-button class="text_bold m-l-20">Next</button></span></h3>
-
-  <mat-grid-list [cols]="breakpoint" rowHeight="2:2" (window:resize)="onResize($event)">
-    <mat-grid-tile *ngFor="let x of productLists" id="ProductID">
-      <div class="mat-grid-tile-div"><img mat-card-image [src]="x.image" class="mat-grid_img">
+<app-controls [categories]="categories" (notify)="onNotified($event)">
+</app-controls>
+<div class="product">
+  <h3 align="center" class="text_bold hide pagenation_text">Showing 20 of 20 Products-Page 1-2<span><button mat-button class="text_bold m-l-20">Next</button></span></h3>
+  <mat-grid-list [cols]="breakpoint" rowHeight="2:2" (window:resize)="onResize($event)" [gutterSize]="'40px'">
+    <mat-grid-tile class="mat-grid-tile" *ngFor="let x of productLists" id="ProductID">
+      <div class="mat-grid-tile-div">
+          <div class="overlay">
+              <button (click)="oneditProd(x)"  color="primary" mat-mini-fab #button>
+                <mat-icon aria-label="">edit</mat-icon>
+              </button><br/>
+              <button  color="primary" mat-mini-fab #button>
+                  <mat-icon aria-label="">delete</mat-icon>
+                </button> 
+            </div>
+        <div class="img">
+          <img mat-card-image (click)="onselectitem(x)" [src]="x.image" class="mat-grid_img" />
+        </div>     
         <button mat-raised-button class="addtocart_button">[ADD TO CART]</button>
-        <p>{{x.description | slice:0:120}}</p>
+        <p>{{x.description | slice:0:20}}{{ x.description.length > 20 ? '....' : '' }}</p>
         <p class="price">${{x.price}}</p>
+        
       </div>
     </mat-grid-tile>
-
-
   </mat-grid-list>
 </div>

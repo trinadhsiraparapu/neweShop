@@ -1,0 +1,40 @@
+<mat-grid-list cols="2" rowHeight="2:1" class="new_prod">
+  <mat-grid-tile>
+    <form action="/action_page.php" class="tileform">
+      <label for="Id" class="lbl">Id:</label>
+      <mat-form-field appearance="outline">
+        <mat-label >Id:</mat-label>
+        <input matInput type="text" id="Id" name="Id">
+      </mat-form-field><br/>
+      <label for="category" class="lbl">category:</label>
+      <mat-form-field appearance="outline">
+        <mat-label>category:</mat-label>
+        <input matInput type="text" id="category" name="category">
+      </mat-form-field><br/>
+      <label for="price" class="lbl">price:</label>
+      <mat-form-field appearance="outline">
+        <mat-label>price:</mat-label>
+        <input matInput type="text" id="price" name="price">
+      </mat-form-field><br/>
+      <label for="description" class="lbl">description:</label>
+      <mat-form-field appearance="outline">
+        <mat-label>description:</mat-label>
+        <input matInput type="text" id="description" name="description">
+      </mat-form-field><br/>
+
+      <input class="lbl" type="submit" value="Submit">
+
+    </form>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <div class="img">
+      <img src="" style="width:100%;">
+    </div>
+    <form>
+
+      <input type="file" id="myFile" name="filename" class="lbl">
+
+    </form>
+  </mat-grid-tile>
+
+</mat-grid-list>

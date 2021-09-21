@@ -1,3 +1,6 @@
+.pagenation_text {
+  margin: 2% 0 3% 0;
+}
 .mat-card-tile{
     height:50%;
     overflow:visible;
@@ -6,17 +9,63 @@
     width: auto;
     height: auto;
   }
+  .mat-grid-tile {
+    overflow: visible;
+  }
   .mat-grid-tile-div{
     display:block;
-    margin:0px 0px;
-    width: 93%;
+    margin:0;
+    width: 90%;
+    position: relative;
+    overflow: visible;
   }
-  
+  .product{
+    max-width: 80%;
+    margin: 0px auto; 
+    display: block;
+    width: 100%;
+  }
+  .img{
+    margin: auto;
+    width: 80%;
+    height: 230px;
+  }
   .mat-grid_img {
     display:block;
-    width:30%;
+    width:100%;
+    height: 100%;
     margin: 0 auto;
+    object-fit: contain;
     
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 6%;
+    right: 0;
+    height: 10%;
+    width: 10%;
+    opacity: 0;
+    transition: .3s ease;
+    opacity: 0;
+  }
+  
+  .overlay:hover  {
+    opacity: 1;
+    display: block;
+  }
+  
+  .icon {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
   }
 .spacer {
 flex: 1;
@@ -42,7 +91,6 @@ flex: 1;
   }
   .price {
     font-size: 1.5em;
-    margin-bottom: 35px;
     text-align: center; 
   }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -56,6 +104,8 @@ flex: 1;
 
     .mat-grid-tile-div, .mat-grid_img{
       width: 100%;
+      margin-top: 35px;
+      margin-top: 50px;
     }
 
   .mat-card-tile {
@@ -95,8 +145,11 @@ flex: 1;
 
   .mat-grid-tile-div, .mat-grid_img{
     width: 100%;
+    margin-top: 35px;
   }
-
+  .img{
+    height: 205px;
+  }
 .mat-card-tile {
   width: 100%;
   display: block;

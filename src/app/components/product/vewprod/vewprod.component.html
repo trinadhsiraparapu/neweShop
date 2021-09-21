@@ -1,0 +1,38 @@
+<mat-grid-list cols="2" rowHeight="2:1" class="new_prod"> 
+  <mat-grid-tile><form action="/action_page.php">
+    <label class="lbl" for="Id">Id:</label>
+    <mat-form-field appearance="outline">
+      <mat-label>Id:</mat-label>
+      <input matInput  type="text" id="Id" name="Id" value="{{productLists['id']}}">
+    </mat-form-field><br/>
+    <label class="lbl" for="category">category:</label>
+    <mat-form-field appearance="outline">
+      <mat-label>category:</mat-label>
+      <input matInput  type="text" id="category" name="category" value="{{productLists['category']}}">
+    </mat-form-field><br/>
+    <label class="lbl" for="price">price:</label>
+    <mat-form-field appearance="outline">
+      <mat-label>price:</mat-label>
+      <input matInput  type="text" id="price" name="price" value="{{productLists['price']}}">
+    </mat-form-field><br/>
+    <label class="lbl" for="description">description:</label>
+    <mat-form-field appearance="outline">
+      <mat-label>description:</mat-label>
+      <input matInput  type="text" id="description" name="description" value="{{productLists['description']}}">
+    </mat-form-field><br/>      
+  </form></mat-grid-tile>
+  <mat-grid-tile><div class="img">
+    <img src="{{productLists['image']}}" class="img">
+  </div>
+  <form action="/action_page.php">
+    
+    <input type="file" id="myFile" name="filename">
+    
+  </form>
+</mat-grid-tile>
+  
+</mat-grid-list>
+
+
+
+

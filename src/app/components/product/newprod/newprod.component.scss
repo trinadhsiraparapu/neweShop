@@ -1,0 +1,362 @@
+.toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: white;
+    font-weight: 600;
+  }
+  .new_prod {
+    margin-top: 5%;
+  }
+  .mat-grid-tile {
+    overflow: visible;
+  }
+  .lbl{
+    font-family: cursive;
+    font-size: x-large;
+  }
+  ::ng-deep {
+    .mat-form-field-appearance-outline .mat-form-field-outline {
+      color:black;
+      display: flex;
+      flex-direction: row;
+      padding: 0 4px;
+   }
+   mat-form-field {
+    .mat-hint, input, ::placeholder, .mat-form-field-label {
+       color: white;
+       margin-top:-15px;
+    }
+    
+ }
+}
+  .w1080{
+  max-width: 80%;
+  width: 100%;
+  margin: 0px auto;
+  display: inherit;
+  }
+  .home_icon {
+    color: lightseagreen;
+    margin-left: 6em;
+  }
+  .logo{
+    color:  lightseagreen;
+    font-size: 2em;
+    margin-right: 30em;
+  }
+  .mlogo{
+    display: none;
+    visibility: hidden;
+  }
+  .login_btn {
+    color: black;
+    margin-right: 10em;
+    font-size: 15px;
+    width: 4vw;
+    height: 2vh;
+  }
+  .icons_bg {
+    display: none;
+    background-color: #00806B;
+    width: 100%;
+    padding: 15px;
+    color: #FFF;
+    position: relative;
+  }
+  .spacer {
+    flex: 1;
+  }
+  .settings_icon {
+    display: none;
+    margin: 0 15px 0 0;
+  }
+  .filter{
+    visibility: hidden;
+  }
+  @media only screen and (max-width: 1024px)  {
+    .toolbar{
+      height: 6%;
+    }
+    .logo{
+      margin-right: 24em;
+    }
+   }
+   @media only screen and (max-width: 768px)  {
+    .toolbar{
+      height: 6%;
+    }
+    .logo{
+      margin-right: 16em;
+    }
+   }
+   @media screen and (max-width: 575px) {
+    svg#rocket-smoke, 
+    .login_btn {
+      display: none;
+      visibility: hidden;
+    }
+  .icons_bg, .settings_icon {
+    display: block;
+    visibility: visible;
+  }
+  .toolbar {
+    position: relative;
+    padding: 20px 0;
+    background-color:lightseagreen;
+  }
+ .wlogo{
+   display: none;
+   visibility: hidden;
+ }
+  .logo {
+    margin-right: 4em;
+    color: white;
+  }
+  .mlogo{
+    visibility: visible;
+    display: inline;
+    margin-left: 3em;
+  }
+.settings_icon{
+  margin: 10% 0 0 0;
+}
+  .list_icon {
+    margin: 0px 8px;
+  }
+
+  .user_icon {
+    margin-left: 4em;
+  }
+
+  .cart_icon {
+    margin-left: 5em;
+  }
+  .filter {
+    display: block;
+   visibility: visible;
+   background-color: rgb(20, 241, 20);
+   text-align: center;
+   height: 5em;
+   color: white;
+  }
+}
+  @media screen and (max-width: 480px){
+    .toolbar {
+      padding:7% 5%;
+      width: 90%;
+    }
+    .icons_bg, .settings_icon {
+      display: block;
+      visibility: visible;
+    }
+  .home_icon {
+    margin-left: 5em;
+  }
+  .login_btn {
+    display: none;
+  }
+  .filter {
+    display: block;
+   visibility: visible;
+   background-color: rgb(20, 241, 20);
+   text-align: center;
+   line-height: 5em;
+   color: white;
+  }
+  .logo {
+    margin-right: 30%;
+    color: white;
+  }
+  .icons_bg{
+    width: 86%;
+    padding: 7%;
+  }
+  .settings_icon{
+    margin: 64% 0 0 0;
+  }
+  }
+  
+
+
+.mat-card-tile{
+    height:50%;
+    overflow:visible;
+    text-align: center;
+    position: absolute;
+    width: auto;
+    height: auto;
+  }
+  
+  .mat-grid-tile-div{
+    display:block;
+    margin:20px 0px;
+    width: 90%;
+    position: relative;
+    
+    
+  }
+  .product{
+    max-width: 80%;
+    margin: 0px auto; 
+    display: block;
+     width: 100%;
+  }
+  .img{
+    margin: auto;
+    width: 80%;
+    height: 230px;
+  }
+  .mat-grid_img {
+    display:block;
+    width:100%;
+    height: 100%;
+    margin: 0 auto;
+    object-fit: contain;
+    
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15%;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    
+    opacity: 0;
+  }
+  
+  .overlay:hover  {
+    opacity: 1;
+  }
+  
+  .icon {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+.spacer {
+flex: 1;
+}
+.m-l-20{
+  margin-left: 10em;
+}
+.addtocart_button {
+    display: block; 
+    margin: 10px auto; 
+    padding: 0px 35px; 
+    background-color:#c1e88d
+    ; 
+    color:white
+  }
+  p {
+    margin: 10px 0;
+    font-weight: bold;
+    text-align: center;
+  }
+  .text_bold {
+    font-weight: bold;
+  }
+  .price {
+    font-size: 1.5em;
+    margin-bottom: 35px;
+    text-align: center; 
+  }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    
+   }
+  @media screen and (max-width: 575px) {
+    svg#rocket-smoke, .login_btn {
+      display: none;
+      visibility: hidden;
+    }
+
+    .mat-grid-tile-div, .mat-grid_img{
+      width: 100%;
+    }
+
+  .mat-card-tile {
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+    border: 0px ;
+    position: relative;
+    text-align: center;
+  }
+  .icons_bg, .settings_icon {
+    display: block;
+    visibility: visible;
+  }
+  .toolbar {
+    position: relative;
+  }
+
+  .list_icon {
+    margin: 0px 10px;
+  }
+
+  .user_icon {
+    margin-left: 4em;
+  }
+
+  .cart_icon {
+    margin-left: 5em;
+  }
+  .hide {
+   visibility: hidden;
+   display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+ 
+
+  .mat-grid-tile-div, .mat-grid_img{
+    width: 100%;
+  }
+
+.mat-card-tile {
+  width: 100%;
+  display: block;
+  margin: 20px auto;
+  border: 0px ;
+  position: relative;
+  text-align: center;
+}
+.icons_bg, .settings_icon {
+  display: block;
+  visibility: visible;
+}
+
+
+.list_icon {
+  margin: 0px 10px;
+}
+
+.user_icon {
+  margin-left: 4em;
+}
+
+.cart_icon {
+  margin-left: 5em;
+}
+.hide {
+ visibility: hidden;
+ display: none;
+}
+}
+
+    
