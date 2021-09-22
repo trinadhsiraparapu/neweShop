@@ -11,7 +11,7 @@ export class ControlsComponent implements OnInit {
   @Output() notify: EventEmitter<string> = new EventEmitter<string>();
   public sclcat: string;
   public categories: CategoryList[] = [];
-  constructor(private http: CategoryserService) { }
+  constructor(private categoryserservices: CategoryserService) { }
   changeClient(value) {
     this.sclcat = value;
   }
@@ -22,7 +22,7 @@ export class ControlsComponent implements OnInit {
     this.notify.emit(categories.value);
   }
   ngOnInit() {
-    this.http.getCategories().subscribe((data) => {
+    this.categoryserservices.getCategories().subscribe((data) => {
       this.categories = data;
     });
 
